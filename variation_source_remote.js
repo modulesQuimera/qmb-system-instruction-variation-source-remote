@@ -18,9 +18,9 @@ module.exports = function(RED) {
                 action: "variation_source_remote",
                 payload: {
                     attributes: [
-                        { source_value:  parseInt(node.source_value) },
-                        { time_meter:  parseInt(node.time_meter) },
-                        { repeat:  parseInt(node.repeat) },
+                        { name: "source_value", value: parseInt(node.source_value) },
+                        { name: "time_meter", value: parseInt(node.time_meter) },
+                        { name: "repeat", value: parseInt(node.repeat) },
                     ],
                 }
             };
